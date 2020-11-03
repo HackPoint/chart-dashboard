@@ -17,13 +17,19 @@ import { MatMenuModule } from '@angular/material/menu';
 import { NavComponent } from './containers/nav/nav.component';
 import { DashboardComponent } from './containers/dashboard/dashboard.component';
 import { CardComponent } from './components/card/card.component';
+import { ChartContainerComponent } from './containers/charts-container/chart-container/chart-container.component';
+import { LineChartComponent } from './components/charts/line-chart/line-chart.component';
+import { BarChartComponent } from './components/charts/bar-chart/bar-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     DashboardComponent,
-    CardComponent
+    CardComponent,
+    LineChartComponent,
+    BarChartComponent,
+    ChartContainerComponent
   ],
   imports: [
     BrowserModule,
