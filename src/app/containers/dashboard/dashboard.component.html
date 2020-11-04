@@ -1,0 +1,27 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="{{ ( cardLayout | async )?.columns }}" rowHeight="200px">
+    <!--Charts-->
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <cd-card title="Monthly Revenue">
+        <cd-line-chart></cd-line-chart>
+      </cd-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <cd-card title="Product Sales">
+        <cd-line-chart></cd-line-chart>
+      </cd-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <cd-card title="Sales by Traffic Source">
+        <cd-line-chart></cd-line-chart>
+      </cd-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <cd-card title="Online Store Sessions by Traffic Source">
+       <cd-bar-chart></cd-bar-chart>
+      </cd-card>
+    </mat-grid-tile>
+    
+  </mat-grid-list>
+</div>
