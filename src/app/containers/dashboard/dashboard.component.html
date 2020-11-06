@@ -4,24 +4,23 @@
     <!--Charts-->
     <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
       <cd-card title="Monthly Revenue">
-        <cd-line-chart></cd-line-chart>
+        <cd-chart chartType="bar"></cd-chart>
       </cd-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
       <cd-card title="Product Sales">
-        <cd-line-chart></cd-line-chart>
+        <cd-chart chartType="bar"></cd-chart>
       </cd-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
       <cd-card title="Sales by Traffic Source">
-        <cd-line-chart></cd-line-chart>
+        <cd-chart chartType="line"></cd-chart>
       </cd-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
       <cd-card title="Online Store Sessions by Traffic Source">
-       <cd-bar-chart></cd-bar-chart>
+        <cd-chart chartType="line"></cd-chart>
       </cd-card>
     </mat-grid-tile>
-    
   </mat-grid-list>
 </div>

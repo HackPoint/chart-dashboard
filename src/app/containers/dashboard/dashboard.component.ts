@@ -8,7 +8,7 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
-  cardLayout = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
+  cardLayout = this.breakpointObserver.observe([Breakpoints.Handset, Breakpoints.Tablet]).pipe(
     map(({ matches }) => {
       if (matches) {
         return {
