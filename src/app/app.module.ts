@@ -18,6 +18,9 @@ import { NavComponent } from './containers/nav/nav.component';
 import { DashboardComponent } from './containers/dashboard/dashboard.component';
 import { CardComponent } from './components/card/card.component';
 import { ChartComponent } from './components/charts/chart/chart.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -40,9 +43,13 @@ import { ChartComponent } from './components/charts/chart/chart.component';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatFormFieldModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {
+}
